@@ -37,13 +37,14 @@ export const Novels = () => {
         Loading ....
       </p>
     );
-  if (error)
+  if (error) {
+    console.log(error);
     return (
       <p className="text-white flex items-center justify-center">
         Oops! Something went wrong ....
       </p>
     );
-
+  }
   return (
     <div className="mt-5">
       <form onSubmit={handleSubmit} className="flex my-5 space-x-3">
